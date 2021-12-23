@@ -1,0 +1,36 @@
+@import '../../styles/GlobalStyles/global.scss';
+
+.nav{
+    background: #333;
+    color: #fff;
+    .wrapper{
+        @include flexBox();
+        @include wrapper();
+        .logo{
+            font-size: 1.4rem;
+            font-weight: 600;
+            cursor: pointer;
+            span{
+                color: #0070f3;
+                margin-left: .1rem;
+            }
+        }
+        .nav_items{
+            ul{
+                display: flex;
+                gap: 4rem;
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .nav_items{
+        ul{
+            gap: 1.5rem;
+        }
+    }
+}

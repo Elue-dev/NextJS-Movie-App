@@ -1,0 +1,11 @@
+@mixin flexBox() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin wrapper() {
+    max-width: 1300px;
+    margin: auto;
+    width: 80%;
+}

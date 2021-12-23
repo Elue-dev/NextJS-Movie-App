@@ -1,0 +1,29 @@
+@import '../GlobalStyles/global.scss';
+
+.post_flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 3rem
+}
+
+.posts{
+    @include wrapper();
+    width: 50%;
+    padding-top: 3rem;
+    img{
+        width: 100%;
+        height: 430px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 500px){
+    .post_flex{
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+
+    .posts{
+        width: auto;
+    }
+}

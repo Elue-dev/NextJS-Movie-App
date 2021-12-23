@@ -1,0 +1,48 @@
+.nav {
+  background: #333;
+  color: #fff;
+}
+
+.nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  width: 80%;
+}
+
+.nav .wrapper .logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav .wrapper .logo span {
+  color: #0070f3;
+  margin-left: .1rem;
+}
+
+.nav .wrapper .nav_items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.nav .wrapper .nav_items ul li {
+  list-style: none;
+}
+
+@media (max-width: 500px) {
+  .nav_items ul {
+    gap: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */
