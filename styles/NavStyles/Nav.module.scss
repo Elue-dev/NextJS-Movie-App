@@ -23,14 +23,13 @@
                     list-style: none;
                 }
             }
-        }
-    }
-}
-
-@media(max-width:500px){
-    .nav_items{
-        ul{
-            gap: 1.5rem;
+            @media(max-width:500px){
+                .nav_items{
+                    ul{
+                        gap: 1.5rem;
+                    }
+                }
+            }
         }
     }
 }
